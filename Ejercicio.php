@@ -5,7 +5,7 @@ $direccion = "Bajada de San Juan 12";
 $email = "pepehernandez@gmail.com";
 $emailconfirmacion = "pepehernandez@gmail.com";
 $dni = "72184616G";
-$contraseña = "arbusto";
+$contraseña = "Arbusto";
 
 for ( $pos=0; $pos < strlen($nombre); $pos ++ ) {
     $byte = substr($nombre, $pos); 
