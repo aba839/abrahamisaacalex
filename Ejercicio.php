@@ -3,7 +3,7 @@ $nombre = "Pepe";
 $apellido = "Hernández";
 $direccion = "Bajada de San Juan 12";
 $email = "pepehernandez@gmail.com";
-$emailconfirmacion = $email;
+$emailconfirmacion = "pepehernandez@gmail.com";
 $dni = "72184616G";
 $contraseña = "arbusto";
 
@@ -30,6 +30,18 @@ function validarLetra($nombre,$apellido){
 }
 
 validarLetra($nombre,$apellido);*/
+
+//function validarDireccion($direccion)
+
+function validarEmail($email, $emailconfirmacion){
+    if($email == $emailconfirmacion){
+        echo "correcto";
+    } else{
+        echo "incorrecto";
+    }    
+}
+
+validarEmail($email, $emailconfirmacion);
 
 
 ?>
