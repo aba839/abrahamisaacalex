@@ -5,7 +5,7 @@ $direccion = "Bajada de San Juan 12, 28000, Madrid, España";
 $email = "pepehernandez@gmail.com";
 $emailconfirmacion = "pepehernandez@gmail.com";
 $dni = "72184616G";
-$contraseña = "Arbusto1$";
+$pass = "Arbusto1$";
 
 
 function validarNombre($nombre) {
@@ -40,5 +40,26 @@ function validarApellido($apellido) {
     return false;
 }
 
+//function ValidarDireccion($direccion){ es con count()
 
+//}
+
+function validarEmail($email, $emailconfirmacion){
+    if($email == $emailconfirmacion){
+        echo "correcto<br>";
+    } else{
+        echo "incorrecto<br>";
+    }    
+}
+
+function validarDNI($dni) {
+    $letra = substr($dni, -1);
+    $numeros = substr($dni, 0, -1);
+    return substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros % 23, 1) == $letra;
+}
+
+
+function validarPass($pass) {
+    
+}
 ?>
